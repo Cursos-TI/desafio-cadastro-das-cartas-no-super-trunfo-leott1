@@ -1,32 +1,43 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Definindo variáveis 
-    float pop;
+    // definindo variaveis 
     int qtdpon;
-    float area;
-    float pib;
-    char nomecid[20];
+    char nomecit[50], codcit[50];
+    double  pop, area, pib;
 
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    printf("Insira o nome da cidade: \n");
-    scanf("%s", &nomecid);
-    
-    print("%s", nomecid);
+    // solicitando entradas do usuario, separados por tipo de variavel (char)
+    printf("Digite o código da cidade: \n");
+    scanf("%s", &codcit);
 
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("Digite o nome: \n");
+    scanf("%s", &nomecit);
+
+    // solicitando entradas do usuario, separados por tipo de variavel (double)
+    printf("Digite a população: \n");
+    scanf("%lf", &pop);
+
+    printf("Digite a área: \n");
+    scanf("%lf", &area);
+
+    printf("Digite o PIB: \n");
+    scanf("%lf", &pib);
+
+    // solicitando entradas do usuario, separados por tipo int
+    printf("Digite a quantidade de pontos turísticos: \n");
+    scanf("%d", &qtdpon);
+
+    // exibindo entradas ao usuário separados por tipo char
+    printf("O codigo de sua cidade é: %s\nO nome é: %s\n", codcit, nomecit);
+  
+
+    // exibindo entradas ao usuário separados por tipo double
+    printf("A população é:  %lf\nA área é: %lf\nO PIB é: %lf\n", pop, area, pib);
+
+    // exibindo entradas ao usuário separados por tipo int
+    printf("A quantidade de pontos turísticos são: %d\n", qtdpon);
+  
+
 
     return 0;
 }
