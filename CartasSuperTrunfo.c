@@ -97,13 +97,78 @@ int main() {
     // consideracoes finais resultado
 
     printf("Resultado final: \n");
-    printf("População, carta 1 venceu: %d\n", pop > pop1);
-    printf("Área, carta 1 venceu: %d\n", area > area1);
-    printf("PIP, carta 1 venceu: %d\n", pib > pib1);
-    printf("Pontos turísticos, carta 1 venceu: %d\n", qtdpon > qtdpon1);
-    printf("Densidade populacional, carta 1 venceu: %d\n", densp < densp1);
-    printf("PIB per Capita, carta 1 venceu: %d\n", pbp > pbp1);
-    printf("SUPER PODER, carta 1 venceu: %d\n", sup > sup1);
+
+    printf("Carta 1 - População: %u\n", pop);
+    printf("Carta 2 - População: %u\n", pop1);
+
+    if (pop > pop1){
+        printf("Carta 1 venceu! \n");
+    } else{
+        printf("Carta 2 venceu! \n");
+    }
     
+  
+    printf("Carta 1 - Área: %f\n", area);
+    printf("Carta 2 - Área: %f\n", area1);
+
+    if (area > area1){
+        printf("Carta 1 venceu! \n!");
+    } else{
+        printf("Carta 2 venceu! \n!");
+    }
+    
+  
+    printf("Carta 1 - PIB: %f\n", pib);
+    printf("Carta 2 - PIB: %f\n", pib1);
+
+    if (pib > pib1){
+        printf("Carta 1 venceu! \n");
+    } else{
+        printf("Carta 2 venceu! \n");
+    }
+    
+  
+    printf("Carta 1 - Pontos turístiscos: %d\n", qtdpon);
+    printf("Carta 2 - Pontos turístiscos: %d\n", qtdpon1);
+
+    if (qtdpon > qtdpon1){
+        printf("Carta 1 venceu! \n");
+    } else{
+        printf("Carta 2 venceu! \n");
+    }
+    
+  
+    printf("Carta 1 - Densidade populacional: %f\n", densp);
+    printf("Carta 2 - Densidade populacional: %f\n", densp1);
+
+    if (densp < densp1){
+        printf("Carta 1 venceu! \n");
+    } else{
+        printf("Carta 2 venceu! \n");
+    }
+    
+  
+    printf("Carta 1 - Pib per Capita: %f\n", pbp);
+    printf("Carta 2 - Pib per Capita: %f\n", pbp1);
+
+    if (pbp > pbp1){
+        printf("Carta 1 venceu! \n");
+    } else{
+        printf("Carta 2 venceu! \n");
+    }
+    
+  
+    printf("Carta 1 - SUPERPODER: %f\n", sup);
+    printf("Carta 2 - SUPERPODER: %f\n", sup1);
+
+    if (sup > sup1){
+        printf("Carta 1 venceu! \n");
+    } else{
+        printf("Carta 2 venceu! \n");
+    }
+    
+  
+
+
     return 0;
 }
